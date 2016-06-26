@@ -57,4 +57,11 @@
 - (NSURL *)playAVForRow:(NSInteger)row Section:(NSInteger)section{
     return [NSString stringWithFormat:kGamePlay,self.dateM[section][row].linkObject.uid].yx_URL;
 }
+
+- (NSArray<YXDateModel *> *)midViewModel{
+    return self.recommendModel.mobileStar;
+}
+- (NSArray<YXDateModel *> *)topViewModel{
+    return self.recommendModel.mobileIndex;
+}
 @end

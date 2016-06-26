@@ -9,6 +9,7 @@
 #import "YXRecommendViewController.h"
 #import "YXGameListCell.h"
 #import "YXRecommendHeaderView.h"
+#import "YXSectionHeaderView.h"
 #import "YXRecommendViewModel.h"
 #import "YXAllListTheHeroViewController.h"
 
@@ -17,6 +18,7 @@
 
 static NSString *const recommendIdentify = @"RecommendCell";
 static NSString *const recommendHeaderIdentify = @"RecommendHeader";
+static NSString *const recommendHeader2Identify = @"Recommend2Header";
 //换一换 变量
 static NSInteger itemNum = 0;
 
@@ -55,6 +57,7 @@ static NSInteger itemNum = 0;
     self.collectionView.backgroundColor = kRGBColor(234, 234, 234, 1.0);
     [self.collectionView registerClass:[YXGameListCell class] forCellWithReuseIdentifier:recommendIdentify];
     [self.collectionView registerClass:[YXRecommendHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:recommendHeaderIdentify];
+    [self.collectionView registerClass:[YXSectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:recommendHeader2Identify];
     WK(weakSelf);
     [self.collectionView addHeaderRefresh:^{
         [weakSelf.recommendVM getDataCompletionHandler:^(NSError *error) {
@@ -100,7 +103,7 @@ static NSInteger itemNum = 0;
 -(CGSize)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
     if(!section){
-        CGSize size = CGSizeMake(kScreenW, 200);
+        CGSize size = CGSizeMake(kScreenW, 400);
         return size;
     }else {
         CGSize size = CGSizeMake(kScreenW, 50);
@@ -111,18 +114,27 @@ static NSInteger itemNum = 0;
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     UICollectionReusableView *reusableView = nil;
     if (kind == UICollectionElementKindSectionHeader) {
-        YXRecommendHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind: UICollectionElementKindSectionHeader withReuseIdentifier:recommendHeaderIdentify forIndexPath:indexPath];
         if (!indexPath.section) {
+            YXSectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:recommendHeader2Identify forIndexPath:indexPath];
             headerView.imageV.image = [UIImage imageNamed:@"换一换"];
             headerView.labelDel.text = @"换一换";
+            headerView.labelTitle.text = [self.recommendVM nameForSection:indexPath.section];
+            [headerView.con addTarget:self action:@selector(clickTheBtn:) forControlEvents:UIControlEventTouchUpInside];
+            headerView.con.tag = indexPath.section;
+            [headerView reloadViewWithMidVM:self.recommendVM.midViewModel andTopVM:self.recommendVM.topViewModel CompletionHandler:^{
+                [headerView.ic reloadData];
+                [headerView.colView reloadData];
+            }];
+            reusableView = headerView;
         }else{
+            YXRecommendHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind: UICollectionElementKindSectionHeader withReuseIdentifier:recommendHeaderIdentify forIndexPath:indexPath];
             headerView.labelDel.text = @"更多";
             headerView.imageV.image = [UIImage imageNamed:@"更多"];
+            headerView.labelTitle.text = [self.recommendVM nameForSection:indexPath.section];
+            [headerView.con addTarget:self action:@selector(clickTheBtn:) forControlEvents:UIControlEventTouchUpInside];
+            headerView.con.tag = indexPath.section;
+            reusableView = headerView;
         }
-        headerView.labelTitle.text = [self.recommendVM nameForSection:indexPath.section];
-        [headerView.con addTarget:self action:@selector(clickTheBtn:) forControlEvents:UIControlEventTouchUpInside];
-        headerView.con.tag = indexPath.section;
-        reusableView = headerView;
     }
     return reusableView;
 }

@@ -14,9 +14,9 @@
 @property (nonatomic, strong) UIImageView *leftImage;
 @end
 @implementation YXRecommendHeaderView
-- (instancetype)init
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
         [self imageV];
         [self labelDel];

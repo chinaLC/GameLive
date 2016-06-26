@@ -27,4 +27,7 @@
 - (NSString *)sectionNameForSection:(NSInteger)section;
 
 - (NSURL *)playAVForRow:(NSInteger)row Section:(NSInteger)section;
+
+- (NSArray<YXDateModel *> *)midViewModel;
+- (NSArray<YXDateModel *> *)topViewModel;
 @end

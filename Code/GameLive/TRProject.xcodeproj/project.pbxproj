@@ -41,6 +41,8 @@
 		DB8FB0001D19972E005A0DA0 /* YXAllListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8FAFFF1D19972E005A0DA0 /* YXAllListModel.m */; };
 		DB8FB0031D1998D4005A0DA0 /* YXAllListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8FB0021D1998D4005A0DA0 /* YXAllListViewModel.m */; };
 		DBC0F8721D1BFC8800CE9403 /* YXRecommendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */; };
+		DBFFABE71D1FB42000461B19 /* YXSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */; };
+		DBFFABEA1D1FDC9300461B19 /* YXMidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABE91D1FDC9300461B19 /* YXMidCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,10 @@
 		DB8FB0021D1998D4005A0DA0 /* YXAllListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAllListViewModel.m; sourceTree = "<group>"; };
 		DBC0F8701D1BFC8800CE9403 /* YXRecommendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRecommendHeaderView.h; sourceTree = "<group>"; };
 		DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRecommendHeaderView.m; sourceTree = "<group>"; };
+		DBFFABE51D1FB42000461B19 /* YXSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXSectionHeaderView.h; sourceTree = "<group>"; };
+		DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXSectionHeaderView.m; sourceTree = "<group>"; };
+		DBFFABE81D1FDC9300461B19 /* YXMidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXMidCell.h; sourceTree = "<group>"; };
+		DBFFABE91D1FDC9300461B19 /* YXMidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXMidCell.m; sourceTree = "<group>"; };
 		DDE25EAEFBF2DF6DBEDAD90D /* Pods-TRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRProject/Pods-TRProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,6 +228,10 @@
 				DB1A430B1D1AEE3000B4EFFA /* YXAllListCell.m */,
 				DBC0F8701D1BFC8800CE9403 /* YXRecommendHeaderView.h */,
 				DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */,
+				DBFFABE51D1FB42000461B19 /* YXSectionHeaderView.h */,
+				DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */,
+				DBFFABE81D1FDC9300461B19 /* YXMidCell.h */,
+				DBFFABE91D1FDC9300461B19 /* YXMidCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -484,6 +494,7 @@
 				DB1A42F01D1A94F800B4EFFA /* YXRecommendViewController.m in Sources */,
 				DB8FAFF71D19901A005A0DA0 /* YXGameListViewModel.m in Sources */,
 				38ADA3BB1C626AAF0093502F /* AppDelegate.m in Sources */,
+				DBFFABEA1D1FDC9300461B19 /* YXMidCell.m in Sources */,
 				DB8FB0031D1998D4005A0DA0 /* YXAllListViewModel.m in Sources */,
 				DB1A42F61D1A95B600B4EFFA /* YXGameListViewController.m in Sources */,
 				386BF94E1CBB3CE200BC74F1 /* NSString+YX.m in Sources */,
@@ -502,6 +513,7 @@
 				DB8FAFE81D194CB4005A0DA0 /* YXRecommendModel.m in Sources */,
 				382C11831C7E8CDD00F34BB0 /* AppDelegate+System.m in Sources */,
 				DB8FAFFA1D1992F0005A0DA0 /* YXTheGameModel.m in Sources */,
+				DBFFABE71D1FB42000461B19 /* YXSectionHeaderView.m in Sources */,
 				38ADA3B81C626AAF0093502F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
