@@ -9,6 +9,7 @@
 #import "YXGameListViewController.h"
 #import "YXGameListCell.h"
 #import "YXGameListViewModel.h"
+#import "YXSearchViewController.h"
 @import AVKit;
 @import AVFoundation;
 static NSString *const gameListIdentify = @"GameListCell";
@@ -71,6 +72,13 @@ static NSString *const gameListIdentify = @"GameListCell";
         }];
     }];
     [self.collectionView beginHeaderRefresh];
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"搜索-默认"] landscapeImagePhone:[UIImage imageNamed:@"搜索-按下"] style:UIBarButtonItemStyleDone target:self action:@selector(searchSomeThing:)];
+    self.navigationItem.rightBarButtonItem = rightBar;
+}
+- (void)searchSomeThing:sender{
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:[YXSearchViewController new] animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 #pragma mark - UICollectionView Delegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

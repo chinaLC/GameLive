@@ -20,6 +20,8 @@
 #define kAllListPath @"/json/categories/list.json"
 //视频播放地址
 #define kGamePlay @"http://hls.quanmin.tv/live/%@/playlist.m3u8"
+//搜索
+#define kSeatchPath @"/api/v1"
 
 #endif /* RequestPaths_h */
 

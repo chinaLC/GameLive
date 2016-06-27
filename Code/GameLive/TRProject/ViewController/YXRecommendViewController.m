@@ -12,6 +12,7 @@
 #import "YXSectionHeaderView.h"
 #import "YXRecommendViewModel.h"
 #import "YXAllListTheHeroViewController.h"
+#import "YXSearchViewController.h"
 
 @import AVKit;
 @import AVFoundation;
@@ -58,6 +59,8 @@ static NSInteger itemNum = 0;
     [self.collectionView registerClass:[YXGameListCell class] forCellWithReuseIdentifier:recommendIdentify];
     [self.collectionView registerClass:[YXRecommendHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:recommendHeaderIdentify];
     [self.collectionView registerClass:[YXSectionHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:recommendHeader2Identify];
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"搜索-默认"] landscapeImagePhone:[UIImage imageNamed:@"搜索-按下"] style:UIBarButtonItemStyleDone target:self action:@selector(searchSomeThing:)];
+    self.navigationItem.rightBarButtonItem = rightBar;
     WK(weakSelf);
     [self.collectionView addHeaderRefresh:^{
         [weakSelf.recommendVM getDataCompletionHandler:^(NSError *error) {
@@ -66,6 +69,11 @@ static NSInteger itemNum = 0;
         }];
     }];
     [self.collectionView beginHeaderRefresh];
+}
+- (void)searchSomeThing:sender{
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:[YXSearchViewController new] animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 #pragma mark - CollectionView Delegate
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -156,7 +164,6 @@ static NSInteger itemNum = 0;
     self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:heroVC animated:YES];
     self.hidesBottomBarWhenPushed = NO;
-    
 }
 #pragma mark - LazyLoad 懒加载
 - (YXRecommendViewModel *)recommendVM {

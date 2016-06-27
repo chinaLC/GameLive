@@ -17,7 +17,7 @@
     //全局默认配置
     
     [self setupGlobalConfig];
-    
+
     return YES;
 }
 

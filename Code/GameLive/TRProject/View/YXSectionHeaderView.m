@@ -199,7 +199,7 @@ static NSString *const identify = @"Cell";
         label.textColor = [UIColor whiteColor];
     }
     UIImageView *iv = (UIImageView *)[view viewWithTag:100];
-    [iv sd_setImageWithURL:self.topVM[index].linkObject.appShufflingImage.yx_URL placeholderImage:nil];
+    [iv sd_setImageWithURL:self.topVM[index].linkObject.appShufflingImage.yx_URL placeholderImage:[UIImage imageNamed:@"logo"]];
     UILabel *label = (UILabel *)[view viewWithTag:101];
     label.text = self.topVM[index].linkObject.title;
     return view;
@@ -251,7 +251,7 @@ static NSString *const identify = @"Cell";
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     YXMidCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identify forIndexPath:indexPath];
-    [cell.imageView sd_setImageWithURL:self.midVM[indexPath.row].linkObject.avatar.yx_URL placeholderImage:nil];
+    [cell.imageView sd_setImageWithURL:self.midVM[indexPath.row].linkObject.avatar.yx_URL placeholderImage:[UIImage imageNamed:@"logo"]];
     cell.labelX.text = self.midVM[indexPath.row].linkObject.nick ;
     return cell;
 }

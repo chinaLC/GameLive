@@ -10,7 +10,6 @@
 		0E67ABAA1424CA70AE73070B /* libPods-TRProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8F54CE0222A3F4E0D59483 /* libPods-TRProject.a */; };
 		382C11831C7E8CDD00F34BB0 /* AppDelegate+System.m in Sources */ = {isa = PBXBuildFile; fileRef = 382C11821C7E8CDD00F34BB0 /* AppDelegate+System.m */; };
 		382C976A1C81D686003D1D51 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 382C97691C81D686003D1D51 /* UIView+HUD.m */; };
-		3851FBDE1D0F0A750054BDA0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3851FBDD1D0F0A750054BDA0 /* Info.plist */; };
 		3851FBE11D0F0C110054BDA0 /* TRBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3851FBE01D0F0C110054BDA0 /* TRBaseViewModel.m */; };
 		386BF94B1CBB3C9600BC74F1 /* NSObject+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 386BF94A1CBB3C9600BC74F1 /* NSObject+Parse.m */; };
 		386BF94E1CBB3CE200BC74F1 /* NSString+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 386BF94D1CBB3CE200BC74F1 /* NSString+YX.m */; };
@@ -30,6 +29,8 @@
 		DB1A43091D1ABC0F00B4EFFA /* YXGameListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1A43081D1ABC0F00B4EFFA /* YXGameListCell.m */; };
 		DB1A430C1D1AEE3000B4EFFA /* YXAllListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1A430B1D1AEE3000B4EFFA /* YXAllListCell.m */; };
 		DB1A430F1D1AF41D00B4EFFA /* YXAllListTheHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1A430E1D1AF41D00B4EFFA /* YXAllListTheHeroViewController.m */; };
+		DB78AF8C1D213420004B8837 /* YXResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78AF8B1D213420004B8837 /* YXResumeViewController.m */; };
+		DB78AF8F1D213614004B8837 /* YXResumeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78AF8E1D213614004B8837 /* YXResumeViewCell.m */; };
 		DB8FAFE81D194CB4005A0DA0 /* YXRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8FAFE71D194CB4005A0DA0 /* YXRecommendModel.m */; };
 		DB8FAFEB1D1981B0005A0DA0 /* YXNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8FAFEA1D1981B0005A0DA0 /* YXNetManager.m */; };
 		DB8FAFEE1D1982A7005A0DA0 /* YXRecommendViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8FAFED1D1982A7005A0DA0 /* YXRecommendViewModel.m */; };
@@ -43,6 +44,26 @@
 		DBC0F8721D1BFC8800CE9403 /* YXRecommendHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */; };
 		DBFFABE71D1FB42000461B19 /* YXSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */; };
 		DBFFABEA1D1FDC9300461B19 /* YXMidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABE91D1FDC9300461B19 /* YXMidCell.m */; };
+		DBFFABEF1D20BF2B00461B19 /* YXSearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABEE1D20BF2B00461B19 /* YXSearchModel.m */; };
+		DBFFABF21D20C3D500461B19 /* YXSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABF11D20C3D500461B19 /* YXSearchViewModel.m */; };
+		DBFFABF61D20CC3B00461B19 /* YXSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABF51D20CC3B00461B19 /* YXSearchViewController.m */; };
+		DBFFAC1C1D21043E00461B19 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABFA1D21043E00461B19 /* IQNSArray+Sort.m */; };
+		DBFFAC1D1D21043E00461B19 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABFC1D21043E00461B19 /* IQUIScrollView+Additions.m */; };
+		DBFFAC1E1D21043E00461B19 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFABFE1D21043E00461B19 /* IQUITextFieldView+Additions.m */; };
+		DBFFAC1F1D21043E00461B19 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC001D21043E00461B19 /* IQUIView+Hierarchy.m */; };
+		DBFFAC201D21043E00461B19 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC021D21043E00461B19 /* IQUIViewController+Additions.m */; };
+		DBFFAC211D21043E00461B19 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC041D21043E00461B19 /* IQUIWindow+Hierarchy.m */; };
+		DBFFAC221D21043E00461B19 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC091D21043E00461B19 /* IQKeyboardManager.m */; };
+		DBFFAC231D21043E00461B19 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC0B1D21043E00461B19 /* IQKeyboardReturnKeyHandler.m */; };
+		DBFFAC241D21043E00461B19 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC0E1D21043E00461B19 /* IQTextView.m */; };
+		DBFFAC251D21043E00461B19 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC111D21043E00461B19 /* IQBarButtonItem.m */; };
+		DBFFAC261D21043E00461B19 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC131D21043E00461B19 /* IQPreviousNextView.m */; };
+		DBFFAC271D21043E00461B19 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC151D21043E00461B19 /* IQTitleBarButtonItem.m */; };
+		DBFFAC281D21043E00461B19 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC171D21043E00461B19 /* IQToolbar.m */; };
+		DBFFAC291D21043E00461B19 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC191D21043E00461B19 /* IQUIView+IQKeyboardToolbar.m */; };
+		DBFFAC2A1D21043E00461B19 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DBFFAC1B1D21043E00461B19 /* IQKeyboardManager.bundle */; };
+		DBFFAC301D2113F900461B19 /* YXLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC2F1D2113F900461B19 /* YXLogInViewController.m */; };
+		DBFFAC371D211B4E00461B19 /* YXLogInViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFAC361D211B4E00461B19 /* YXLogInViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,12 +105,16 @@
 		DB1A42F51D1A95B600B4EFFA /* YXGameListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXGameListViewController.m; path = ../YXGameListViewController.m; sourceTree = "<group>"; };
 		DB1A43041D1AB8D600B4EFFA /* YXMyPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXMyPageViewController.h; path = ../YXMyPageViewController.h; sourceTree = "<group>"; };
 		DB1A43051D1AB8D600B4EFFA /* YXMyPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXMyPageViewController.m; path = ../YXMyPageViewController.m; sourceTree = "<group>"; };
-		DB1A43071D1ABC0F00B4EFFA /* YXGameListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXGameListCell.h; sourceTree = "<group>"; };
-		DB1A43081D1ABC0F00B4EFFA /* YXGameListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXGameListCell.m; sourceTree = "<group>"; };
-		DB1A430A1D1AEE3000B4EFFA /* YXAllListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXAllListCell.h; sourceTree = "<group>"; };
-		DB1A430B1D1AEE3000B4EFFA /* YXAllListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAllListCell.m; sourceTree = "<group>"; };
+		DB1A43071D1ABC0F00B4EFFA /* YXGameListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXGameListCell.h; path = ../YXGameListCell.h; sourceTree = "<group>"; };
+		DB1A43081D1ABC0F00B4EFFA /* YXGameListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXGameListCell.m; path = ../YXGameListCell.m; sourceTree = "<group>"; };
+		DB1A430A1D1AEE3000B4EFFA /* YXAllListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXAllListCell.h; path = ../YXAllListCell.h; sourceTree = "<group>"; };
+		DB1A430B1D1AEE3000B4EFFA /* YXAllListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXAllListCell.m; path = ../YXAllListCell.m; sourceTree = "<group>"; };
 		DB1A430D1D1AF41D00B4EFFA /* YXAllListTheHeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXAllListTheHeroViewController.h; path = ../YXAllListTheHeroViewController.h; sourceTree = "<group>"; };
 		DB1A430E1D1AF41D00B4EFFA /* YXAllListTheHeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXAllListTheHeroViewController.m; path = ../YXAllListTheHeroViewController.m; sourceTree = "<group>"; };
+		DB78AF8A1D213420004B8837 /* YXResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXResumeViewController.h; sourceTree = "<group>"; };
+		DB78AF8B1D213420004B8837 /* YXResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXResumeViewController.m; sourceTree = "<group>"; };
+		DB78AF8D1D213614004B8837 /* YXResumeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXResumeViewCell.h; sourceTree = "<group>"; };
+		DB78AF8E1D213614004B8837 /* YXResumeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXResumeViewCell.m; sourceTree = "<group>"; };
 		DB8FAFE61D194CB4005A0DA0 /* YXRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRecommendModel.h; sourceTree = "<group>"; };
 		DB8FAFE71D194CB4005A0DA0 /* YXRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRecommendModel.m; sourceTree = "<group>"; };
 		DB8FAFE91D1981B0005A0DA0 /* YXNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNetManager.h; sourceTree = "<group>"; };
@@ -110,12 +135,53 @@
 		DB8FAFFF1D19972E005A0DA0 /* YXAllListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAllListModel.m; sourceTree = "<group>"; };
 		DB8FB0011D1998D4005A0DA0 /* YXAllListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXAllListViewModel.h; sourceTree = "<group>"; };
 		DB8FB0021D1998D4005A0DA0 /* YXAllListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXAllListViewModel.m; sourceTree = "<group>"; };
-		DBC0F8701D1BFC8800CE9403 /* YXRecommendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRecommendHeaderView.h; sourceTree = "<group>"; };
-		DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRecommendHeaderView.m; sourceTree = "<group>"; };
-		DBFFABE51D1FB42000461B19 /* YXSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXSectionHeaderView.h; sourceTree = "<group>"; };
-		DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXSectionHeaderView.m; sourceTree = "<group>"; };
-		DBFFABE81D1FDC9300461B19 /* YXMidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXMidCell.h; sourceTree = "<group>"; };
-		DBFFABE91D1FDC9300461B19 /* YXMidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXMidCell.m; sourceTree = "<group>"; };
+		DBC0F8701D1BFC8800CE9403 /* YXRecommendHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXRecommendHeaderView.h; path = ../YXRecommendHeaderView.h; sourceTree = "<group>"; };
+		DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXRecommendHeaderView.m; path = ../YXRecommendHeaderView.m; sourceTree = "<group>"; };
+		DBFFABE51D1FB42000461B19 /* YXSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXSectionHeaderView.h; path = ../YXSectionHeaderView.h; sourceTree = "<group>"; };
+		DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXSectionHeaderView.m; path = ../YXSectionHeaderView.m; sourceTree = "<group>"; };
+		DBFFABE81D1FDC9300461B19 /* YXMidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YXMidCell.h; path = ../YXMidCell.h; sourceTree = "<group>"; };
+		DBFFABE91D1FDC9300461B19 /* YXMidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YXMidCell.m; path = ../YXMidCell.m; sourceTree = "<group>"; };
+		DBFFABED1D20BF2B00461B19 /* YXSearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXSearchModel.h; sourceTree = "<group>"; };
+		DBFFABEE1D20BF2B00461B19 /* YXSearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXSearchModel.m; sourceTree = "<group>"; };
+		DBFFABF01D20C3D500461B19 /* YXSearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXSearchViewModel.h; sourceTree = "<group>"; };
+		DBFFABF11D20C3D500461B19 /* YXSearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXSearchViewModel.m; sourceTree = "<group>"; };
+		DBFFABF41D20CC3B00461B19 /* YXSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXSearchViewController.h; sourceTree = "<group>"; };
+		DBFFABF51D20CC3B00461B19 /* YXSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXSearchViewController.m; sourceTree = "<group>"; };
+		DBFFABF91D21043E00461B19 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		DBFFABFA1D21043E00461B19 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		DBFFABFB1D21043E00461B19 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		DBFFABFC1D21043E00461B19 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		DBFFABFD1D21043E00461B19 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		DBFFABFE1D21043E00461B19 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		DBFFABFF1D21043E00461B19 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		DBFFAC001D21043E00461B19 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		DBFFAC011D21043E00461B19 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		DBFFAC021D21043E00461B19 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		DBFFAC031D21043E00461B19 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		DBFFAC041D21043E00461B19 /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		DBFFAC061D21043E00461B19 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		DBFFAC071D21043E00461B19 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		DBFFAC081D21043E00461B19 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		DBFFAC091D21043E00461B19 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		DBFFAC0A1D21043E00461B19 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		DBFFAC0B1D21043E00461B19 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		DBFFAC0D1D21043E00461B19 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		DBFFAC0E1D21043E00461B19 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		DBFFAC101D21043E00461B19 /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		DBFFAC111D21043E00461B19 /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		DBFFAC121D21043E00461B19 /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		DBFFAC131D21043E00461B19 /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		DBFFAC141D21043E00461B19 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		DBFFAC151D21043E00461B19 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		DBFFAC161D21043E00461B19 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		DBFFAC171D21043E00461B19 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		DBFFAC181D21043E00461B19 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		DBFFAC191D21043E00461B19 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		DBFFAC1B1D21043E00461B19 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		DBFFAC2E1D2113F900461B19 /* YXLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLogInViewController.h; sourceTree = "<group>"; };
+		DBFFAC2F1D2113F900461B19 /* YXLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLogInViewController.m; sourceTree = "<group>"; };
+		DBFFAC351D211B4E00461B19 /* YXLogInViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXLogInViewCell.h; sourceTree = "<group>"; };
+		DBFFAC361D211B4E00461B19 /* YXLogInViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXLogInViewCell.m; sourceTree = "<group>"; };
 		DDE25EAEFBF2DF6DBEDAD90D /* Pods-TRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRProject/Pods-TRProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +248,8 @@
 				DB8FAFF91D1992F0005A0DA0 /* YXTheGameModel.m */,
 				DB8FAFFE1D19972E005A0DA0 /* YXAllListModel.h */,
 				DB8FAFFF1D19972E005A0DA0 /* YXAllListModel.m */,
+				DBFFABED1D20BF2B00461B19 /* YXSearchModel.h */,
+				DBFFABEE1D20BF2B00461B19 /* YXSearchModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +283,7 @@
 		38A1A3311C74526C007EEEB7 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				DBFFABF71D21043E00461B19 /* IQKeyboardManager */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -222,16 +291,10 @@
 		38A1A3321C74526C007EEEB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DB1A43071D1ABC0F00B4EFFA /* YXGameListCell.h */,
-				DB1A43081D1ABC0F00B4EFFA /* YXGameListCell.m */,
-				DB1A430A1D1AEE3000B4EFFA /* YXAllListCell.h */,
-				DB1A430B1D1AEE3000B4EFFA /* YXAllListCell.m */,
-				DBC0F8701D1BFC8800CE9403 /* YXRecommendHeaderView.h */,
-				DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */,
-				DBFFABE51D1FB42000461B19 /* YXSectionHeaderView.h */,
-				DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */,
-				DBFFABE81D1FDC9300461B19 /* YXMidCell.h */,
-				DBFFABE91D1FDC9300461B19 /* YXMidCell.m */,
+				DBFFAC341D21191700461B19 /* FourthBarCell */,
+				DBFFAC311D21187F00461B19 /* OnlineCell */,
+				DBFFAC321D21187F00461B19 /* RecommendCell */,
+				DBFFAC331D21187F00461B19 /* SecondBarCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +308,7 @@
 				DBC0F72A1D1B6A0B00CE9403 /* FourBar */,
 				DBC0F72B1D1B6A0B00CE9403 /* SecondBar */,
 				DBC0F72C1D1B6A0B00CE9403 /* ThirdBar */,
+				DBFFABF31D20CB2500461B19 /* SearchViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -262,6 +326,8 @@
 				DB8FAFED1D1982A7005A0DA0 /* YXRecommendViewModel.m */,
 				DB8FB0011D1998D4005A0DA0 /* YXAllListViewModel.h */,
 				DB8FB0021D1998D4005A0DA0 /* YXAllListViewModel.m */,
+				DBFFABF01D20C3D500461B19 /* YXSearchViewModel.h */,
+				DBFFABF11D20C3D500461B19 /* YXSearchViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -337,6 +403,10 @@
 			children = (
 				DB1A43041D1AB8D600B4EFFA /* YXMyPageViewController.h */,
 				DB1A43051D1AB8D600B4EFFA /* YXMyPageViewController.m */,
+				DBFFAC2E1D2113F900461B19 /* YXLogInViewController.h */,
+				DBFFAC2F1D2113F900461B19 /* YXLogInViewController.m */,
+				DB78AF8A1D213420004B8837 /* YXResumeViewController.h */,
+				DB78AF8B1D213420004B8837 /* YXResumeViewController.m */,
 			);
 			path = FourBar;
 			sourceTree = "<group>";
@@ -359,6 +429,135 @@
 				DB1A42F51D1A95B600B4EFFA /* YXGameListViewController.m */,
 			);
 			path = ThirdBar;
+			sourceTree = "<group>";
+		};
+		DBFFABF31D20CB2500461B19 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFABF41D20CC3B00461B19 /* YXSearchViewController.h */,
+				DBFFABF51D20CC3B00461B19 /* YXSearchViewController.m */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		DBFFABF71D21043E00461B19 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFABF81D21043E00461B19 /* Categories */,
+				DBFFAC051D21043E00461B19 /* Constants */,
+				DBFFAC081D21043E00461B19 /* IQKeyboardManager.h */,
+				DBFFAC091D21043E00461B19 /* IQKeyboardManager.m */,
+				DBFFAC0A1D21043E00461B19 /* IQKeyboardReturnKeyHandler.h */,
+				DBFFAC0B1D21043E00461B19 /* IQKeyboardReturnKeyHandler.m */,
+				DBFFAC0C1D21043E00461B19 /* IQTextView */,
+				DBFFAC0F1D21043E00461B19 /* IQToolbar */,
+				DBFFAC1A1D21043E00461B19 /* Resources */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		DBFFABF81D21043E00461B19 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFABF91D21043E00461B19 /* IQNSArray+Sort.h */,
+				DBFFABFA1D21043E00461B19 /* IQNSArray+Sort.m */,
+				DBFFABFB1D21043E00461B19 /* IQUIScrollView+Additions.h */,
+				DBFFABFC1D21043E00461B19 /* IQUIScrollView+Additions.m */,
+				DBFFABFD1D21043E00461B19 /* IQUITextFieldView+Additions.h */,
+				DBFFABFE1D21043E00461B19 /* IQUITextFieldView+Additions.m */,
+				DBFFABFF1D21043E00461B19 /* IQUIView+Hierarchy.h */,
+				DBFFAC001D21043E00461B19 /* IQUIView+Hierarchy.m */,
+				DBFFAC011D21043E00461B19 /* IQUIViewController+Additions.h */,
+				DBFFAC021D21043E00461B19 /* IQUIViewController+Additions.m */,
+				DBFFAC031D21043E00461B19 /* IQUIWindow+Hierarchy.h */,
+				DBFFAC041D21043E00461B19 /* IQUIWindow+Hierarchy.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DBFFAC051D21043E00461B19 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFAC061D21043E00461B19 /* IQKeyboardManagerConstants.h */,
+				DBFFAC071D21043E00461B19 /* IQKeyboardManagerConstantsInternal.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DBFFAC0C1D21043E00461B19 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFAC0D1D21043E00461B19 /* IQTextView.h */,
+				DBFFAC0E1D21043E00461B19 /* IQTextView.m */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		DBFFAC0F1D21043E00461B19 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFAC101D21043E00461B19 /* IQBarButtonItem.h */,
+				DBFFAC111D21043E00461B19 /* IQBarButtonItem.m */,
+				DBFFAC121D21043E00461B19 /* IQPreviousNextView.h */,
+				DBFFAC131D21043E00461B19 /* IQPreviousNextView.m */,
+				DBFFAC141D21043E00461B19 /* IQTitleBarButtonItem.h */,
+				DBFFAC151D21043E00461B19 /* IQTitleBarButtonItem.m */,
+				DBFFAC161D21043E00461B19 /* IQToolbar.h */,
+				DBFFAC171D21043E00461B19 /* IQToolbar.m */,
+				DBFFAC181D21043E00461B19 /* IQUIView+IQKeyboardToolbar.h */,
+				DBFFAC191D21043E00461B19 /* IQUIView+IQKeyboardToolbar.m */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		DBFFAC1A1D21043E00461B19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFAC1B1D21043E00461B19 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DBFFAC311D21187F00461B19 /* OnlineCell */ = {
+			isa = PBXGroup;
+			children = (
+				DB1A43071D1ABC0F00B4EFFA /* YXGameListCell.h */,
+				DB1A43081D1ABC0F00B4EFFA /* YXGameListCell.m */,
+			);
+			path = OnlineCell;
+			sourceTree = "<group>";
+		};
+		DBFFAC321D21187F00461B19 /* RecommendCell */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFABE81D1FDC9300461B19 /* YXMidCell.h */,
+				DBFFABE91D1FDC9300461B19 /* YXMidCell.m */,
+				DBC0F8701D1BFC8800CE9403 /* YXRecommendHeaderView.h */,
+				DBC0F8711D1BFC8800CE9403 /* YXRecommendHeaderView.m */,
+				DBFFABE51D1FB42000461B19 /* YXSectionHeaderView.h */,
+				DBFFABE61D1FB42000461B19 /* YXSectionHeaderView.m */,
+			);
+			path = RecommendCell;
+			sourceTree = "<group>";
+		};
+		DBFFAC331D21187F00461B19 /* SecondBarCell */ = {
+			isa = PBXGroup;
+			children = (
+				DB1A430A1D1AEE3000B4EFFA /* YXAllListCell.h */,
+				DB1A430B1D1AEE3000B4EFFA /* YXAllListCell.m */,
+			);
+			path = SecondBarCell;
+			sourceTree = "<group>";
+		};
+		DBFFAC341D21191700461B19 /* FourthBarCell */ = {
+			isa = PBXGroup;
+			children = (
+				DBFFAC351D211B4E00461B19 /* YXLogInViewCell.h */,
+				DBFFAC361D211B4E00461B19 /* YXLogInViewCell.m */,
+				DB78AF8D1D213614004B8837 /* YXResumeViewCell.h */,
+				DB78AF8E1D213614004B8837 /* YXResumeViewCell.m */,
+			);
+			path = FourthBarCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +590,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = YX;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Tarena;
 				TargetAttributes = {
 					38ADA3B21C626AAF0093502F = {
@@ -423,7 +622,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3851FBDE1D0F0A750054BDA0 /* Info.plist in Resources */,
+				DBFFAC2A1D21043E00461B19 /* IQKeyboardManager.bundle in Resources */,
 				38A641F91C8C225D00FCBF96 /* LaunchScreen.storyboard in Resources */,
 				38A641F81C8C225D00FCBF96 /* Assets.xcassets in Resources */,
 				38A641FA1C8C225D00FCBF96 /* Main.storyboard in Resources */,
@@ -485,20 +684,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFFABEF1D20BF2B00461B19 /* YXSearchModel.m in Sources */,
+				DBFFABF21D20C3D500461B19 /* YXSearchViewModel.m in Sources */,
+				DBFFAC231D21043E00461B19 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				DB1A430C1D1AEE3000B4EFFA /* YXAllListCell.m in Sources */,
 				382C976A1C81D686003D1D51 /* UIView+HUD.m in Sources */,
+				DB78AF8F1D213614004B8837 /* YXResumeViewCell.m in Sources */,
+				DBFFAC1C1D21043E00461B19 /* IQNSArray+Sort.m in Sources */,
 				38A1A3461C745317007EEEB7 /* NSObject+AFNetworking.m in Sources */,
+				DBFFAC1E1D21043E00461B19 /* IQUITextFieldView+Additions.m in Sources */,
+				DBFFAC291D21043E00461B19 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				DB1A43061D1AB8D600B4EFFA /* YXMyPageViewController.m in Sources */,
 				DB8FAFF11D198BA9005A0DA0 /* YXDateModel.m in Sources */,
 				DB1A43091D1ABC0F00B4EFFA /* YXGameListCell.m in Sources */,
+				DBFFAC201D21043E00461B19 /* IQUIViewController+Additions.m in Sources */,
+				DBFFAC261D21043E00461B19 /* IQPreviousNextView.m in Sources */,
+				DBFFAC251D21043E00461B19 /* IQBarButtonItem.m in Sources */,
 				DB1A42F01D1A94F800B4EFFA /* YXRecommendViewController.m in Sources */,
+				DBFFAC371D211B4E00461B19 /* YXLogInViewCell.m in Sources */,
+				DBFFAC241D21043E00461B19 /* IQTextView.m in Sources */,
 				DB8FAFF71D19901A005A0DA0 /* YXGameListViewModel.m in Sources */,
 				38ADA3BB1C626AAF0093502F /* AppDelegate.m in Sources */,
 				DBFFABEA1D1FDC9300461B19 /* YXMidCell.m in Sources */,
+				DBFFAC211D21043E00461B19 /* IQUIWindow+Hierarchy.m in Sources */,
 				DB8FB0031D1998D4005A0DA0 /* YXAllListViewModel.m in Sources */,
 				DB1A42F61D1A95B600B4EFFA /* YXGameListViewController.m in Sources */,
 				386BF94E1CBB3CE200BC74F1 /* NSString+YX.m in Sources */,
+				DBFFAC1D1D21043E00461B19 /* IQUIScrollView+Additions.m in Sources */,
+				DB78AF8C1D213420004B8837 /* YXResumeViewController.m in Sources */,
+				DBFFAC221D21043E00461B19 /* IQKeyboardManager.m in Sources */,
 				DB8FAFEE1D1982A7005A0DA0 /* YXRecommendViewModel.m in Sources */,
+				DBFFAC1F1D21043E00461B19 /* IQUIView+Hierarchy.m in Sources */,
 				DB8FAFEB1D1981B0005A0DA0 /* YXNetManager.m in Sources */,
 				DB1A430F1D1AF41D00B4EFFA /* YXAllListTheHeroViewController.m in Sources */,
 				DB8FAFF41D198DB3005A0DA0 /* YXGameListModel.m in Sources */,
@@ -506,15 +722,19 @@
 				DBC0F8721D1BFC8800CE9403 /* YXRecommendHeaderView.m in Sources */,
 				386BF94B1CBB3C9600BC74F1 /* NSObject+Parse.m in Sources */,
 				38A1A3371C74526C007EEEB7 /* ViewController.m in Sources */,
+				DBFFABF61D20CC3B00461B19 /* YXSearchViewController.m in Sources */,
 				38A1A3481C745317007EEEB7 /* UIScrollView+Refresh.m in Sources */,
 				DB1A42F31D1A959E00B4EFFA /* YXAllListViewController.m in Sources */,
 				3851FBE11D0F0C110054BDA0 /* TRBaseViewModel.m in Sources */,
 				DB8FB0001D19972E005A0DA0 /* YXAllListModel.m in Sources */,
 				DB8FAFE81D194CB4005A0DA0 /* YXRecommendModel.m in Sources */,
+				DBFFAC271D21043E00461B19 /* IQTitleBarButtonItem.m in Sources */,
 				382C11831C7E8CDD00F34BB0 /* AppDelegate+System.m in Sources */,
+				DBFFAC301D2113F900461B19 /* YXLogInViewController.m in Sources */,
 				DB8FAFFA1D1992F0005A0DA0 /* YXTheGameModel.m in Sources */,
 				DBFFABE71D1FB42000461B19 /* YXSectionHeaderView.m in Sources */,
 				38ADA3B81C626AAF0093502F /* main.m in Sources */,
+				DBFFAC281D21043E00461B19 /* IQToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

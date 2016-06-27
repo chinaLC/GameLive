@@ -10,6 +10,7 @@
 #import "YXAllListCell.h"
 #import "YXAllListViewModel.h"
 #import "YXAllListTheHeroViewController.h"
+#import "YXSearchViewController.h"
 static NSString *const allListIdentify = @"AllListCell";
 
 @interface YXAllListViewController ()
@@ -44,6 +45,13 @@ static NSString *const allListIdentify = @"AllListCell";
     [self.allListVM getAllListCompletionHandler:^(NSError *error) {
         [self.collectionView reloadData];
     }];
+    UIBarButtonItem *rightBar = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"搜索-默认"] landscapeImagePhone:[UIImage imageNamed:@"搜索-按下"] style:UIBarButtonItemStyleDone target:self action:@selector(searchSomeThing:)];
+    self.navigationItem.rightBarButtonItem = rightBar;
+}
+- (void)searchSomeThing:sender{
+    self.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:[YXSearchViewController new] animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 #pragma mark - UICollectionView Delegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

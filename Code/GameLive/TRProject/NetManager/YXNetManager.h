@@ -11,9 +11,11 @@
 #import "YXGameListModel.h"
 #import "YXTheGameModel.h"
 #import "YXAllListModel.h"
+#import "YXSearchModel.h"
 @interface YXNetManager : NSObject
 + (id)getRecommendCompletionHandler:(void(^)(id model, NSError *error))completionHandler;
 + (id)getGameListFromList:(NSString *)list CompletionHandler:(void (^)(id model, NSError *error))completionHandler;
 + (id)getTheGameFromTheGameName:(NSString *)gameName List:(NSString *)list CompletionHandler:(void(^)(id model, NSError *error))completionHandler;
 + (id)getAllListCompletionHandler:(void(^)(id model, NSError *error))completionHandler;
++ (id)postTheDataWithKey:(NSString *)key Page:(NSInteger)page  CompletionHandler:(void(^)(id model, NSError *error))completionHandler;
 @end
